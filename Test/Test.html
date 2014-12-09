@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="../expressionevaluator/expressionevaluator.js"></script>
+        <script src="../expressionevaluator/xyaxiscanvas.js"></script>
+    </head>
+    <body>
+        <input type="text" placeholder="ingrese ecuacion" />      
+        <button id="canvasdraw">Dibuja</button>
+        <canvas width="700" height="700"></canvas>
+        <script type="text/javascript">
+            var el=document.getElementById('canvasdraw');
+            el.addEventListener('click',function(){
+                drawCanvas(document.getElementsByTagName('input')[0].value);
+            });
+        </script>
+    </body>
+</html>
